@@ -1,0 +1,146 @@
+/* RESET DA KARLLINHA */
+* {
+    border:0px;
+    margin: 0px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+/* CABEÇALHO */
+header {
+    width: 100%;
+    height: 60px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* ADOTE AQUI HEADER */
+.adoteprincipal {
+    background: #999999;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-grow: 3;
+}
+
+.adote {
+    color:rgb(255, 238, 0);
+    padding: 10px;
+    font-size: 25px;
+    transition: 200ms;
+    cursor:pointer;
+}
+
+.adote:hover {
+    font-size: 30px;
+}
+
+/* NAVEGAÇÃO */
+ul {
+    background-color: rgb(255, 238, 0);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+}
+
+nav {
+    width: 400px;
+}
+
+nav li {
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+nav li:hover {
+    color: white;
+    font-size: 20px;
+}
+
+/* PRINCIPAL */
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container2 {
+    padding: 10px 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 img {
+    display: flex;
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 3px #e6e6e6;
+    transition: 200ms;
+}
+
+.imagem {
+    width: 20%;
+    margin: 20px;
+}
+
+.container2 img:hover {
+ box-shadow: 0 0 20px 2px #999999;
+}
+
+
+/* RODAPÉ */
+footer {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    background-color: #999999;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MÉDIA ETC */
+@media(max-width: 700px){
+    .adoteprincipal {
+        display: none;
+    }
+
+    ul {
+        width: 700px;
+    }
+
+    .container2 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 35%;
+    }
