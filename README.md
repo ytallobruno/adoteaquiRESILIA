@@ -28,6 +28,7 @@
 - FlexBox
 - Seletores (CSS)
 - Reset (CSS)
+- Responsividade & Media Querry (CSS)
 - Pseudo-classes (CSS)
 
 <div id="autor" align="center">
